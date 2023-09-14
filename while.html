@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Matriz com números desordenados
+const numeros = [5, 2, 8, 1, 9];
+
+// Usando um loop while para classificar em ordem decrescente
+let i = 0;
+while (i < numeros.length - 1) {
+    let j = i + 1;
+    while (j < numeros.length) {
+        if (numeros[i] < numeros[j]) {
+            // Troca os elementos de posição se estiverem fora de ordem
+            const temp = numeros[i];
+            numeros[i] = numeros[j];
+            numeros[j] = temp;
+        }
+        j++;
+    }
+    i++;
+}
+
+console.log(numeros); // Saída: [9, 8, 5, 2, 1]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function buscaNoBancoDeDados() {
+    // Simula uma busca que retorna falso (erro)
+    throw new Error("Ocorreu um erro na busca no banco de dados.");
+}
+
+try {
+    const resultado = buscaNoBancoDeDados();
+    console.log(resultado);
+} catch (erro) {
+    console.log("Erro: " + erro.message);
+}
+
+    </script>
+</body>
+</html>
